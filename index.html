@@ -1,1 +1,58 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="theme-color" content="#0b1220"/><meta name="description" content="CivicWatch — follow where public money goes."/><title>CivicWatch</title></head><body><div id="root"></div><script type="module" src="./src/main.jsx"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="theme-color" content="#0b1220"/>
+  <meta name="description" content="CivicWatch — follow where public money goes."/>
+  <title>CivicWatch</title>
+  <style>
+    #boot-status{position:fixed;inset:0;display:grid;place-items:center;padding:24px;background:#f5f7fa;color:#182230;font:16px/1.5 system-ui,sans-serif;text-align:center;z-index:9999}
+    #boot-status .box{max-width:620px;padding:28px;border:1px solid #e1e6ed;border-radius:16px;background:#fff;box-shadow:0 10px 30px rgba(11,18,32,.08)}
+    #boot-status h1{margin:0 0 8px;font-size:24px}
+    #boot-status p{margin:8px 0;color:#687487}
+    #boot-status pre{margin:16px 0 0;padding:12px;overflow:auto;text-align:left;white-space:pre-wrap;background:#f5f7fa;border-radius:10px;font-size:12px}
+  </style>
+</head>
+<body>
+  <div id="boot-status" role="status" aria-live="polite">
+    <div class="box">
+      <h1>CivicWatch</h1>
+      <p>Loading the civic spending explorer…</p>
+      <pre id="boot-error" hidden></pre>
+    </div>
+  </div>
+  <div id="root"></div>
+  <noscript>
+    <div id="boot-status"><div class="box"><h1>CivicWatch</h1><p>JavaScript is required to run this app. Please enable JavaScript in your browser.</p></div></div>
+  </noscript>
+  <script>
+    (function(){
+      function showError(message){
+        var status=document.getElementById("boot-status");
+        var error=document.getElementById("boot-error");
+        if(status && error){
+          error.hidden=false;
+          error.textContent=message;
+          var p=status.querySelector("p");
+          if(p) p.textContent="CivicWatch could not start. Please send a screenshot of this message.";
+        }
+      }
+      window.addEventListener("error",function(event){
+        showError("Browser error: "+(event.message||"The app script failed to load.")+(event.filename?"\nFile: "+event.filename:""));
+      });
+      window.addEventListener("unhandledrejection",function(event){
+        var reason=event.reason;
+        showError("Unhandled error: "+(reason && (reason.stack||reason.message) || String(reason)));
+      });
+      window.setTimeout(function(){
+        var status=document.getElementById("boot-status");
+        if(status && !status.dataset.ready){
+          showError("The CivicWatch JavaScript bundle did not finish starting. This usually means the app bundle was not loaded by GitHub Pages.");
+        }
+      },5000);
+    })();
+  </script>
+  <script type="module" src="./src/main.jsx"></script>
+</body>
+</html>
