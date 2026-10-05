@@ -3,6 +3,8 @@ name: Deploy CivicWatch to GitHub Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    - cron: "17 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -28,6 +30,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Download Tennessee TAG expenditure data
+        run: npm run data:download -- 2025
+
+      - name: Normalize Tennessee TAG expenditure data
+        run: npm run data:import
 
       - name: Build
         run: npm run build
