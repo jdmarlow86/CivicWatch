@@ -1,0 +1,12 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const year=process.argv[2]||"2025";
+const url=`https://comptroller.tn.gov/content/dam/cot/la/documents/tag-exports/E${year}%20Expenditures.xlsx`;
+const out=process.argv[3]||path.join(ROOT,"data","raw",`E${year} Expenditures.xlsx`);
+const res=await fetch(url);
+if(!res.ok) throw new Error(`Tennessee export unavailable: ${res.status} ${res.statusText}`);
+await fs.mkdir(path.dirname(out),{recursive:true});
+await fs.writeFile(out,Buffer.from(await res.arrayBuffer()));
+console.log(`Downloaded FY${year} TAG expenditures -> ${out}`);
