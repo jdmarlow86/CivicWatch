@@ -37,6 +37,9 @@ jobs:
       - name: Normalize Tennessee TAG expenditure data
         run: npm run data:import
 
+      - name: Publish normalized data to the Pages bundle
+        run: mkdir -p public/data/normalized && cp data/normalized/tn-expenditures.json public/data/normalized/tn-expenditures.json
+
       - name: Build
         run: npm run build
 
