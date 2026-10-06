@@ -14,6 +14,8 @@ const rows=[];
 
 for(const sheet of wb.SheetNames){
   const data=XLSX.utils.sheet_to_json(wb.Sheets[sheet],{defval:null,raw:true});
+  console.log(`TAG sheet ${sheet} columns:`, data.length ? Object.keys(data[0]).join(" | ") : "(none)");
+  if(data.length) console.log("TAG first row:", JSON.stringify(data[0]));
   for(const raw of data){
     const keys=Object.keys(raw);
     const key=(patterns)=>keys.find(k=>patterns.some(p=>k.toLowerCase().replace(/[^a-z0-9]/g,"").includes(p)));
