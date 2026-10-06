@@ -14,53 +14,25 @@ const rows=[];
 
 for(const sheet of wb.SheetNames){
   const data=XLSX.utils.sheet_to_json(wb.Sheets[sheet],{defval:null,raw:true});
-  console.log(`TAG sheet ${sheet} columns:`, data.length ? Object.keys(data[0]).join(" | ") : "(none)");
-  if(data.length) console.log("TAG first row:", JSON.stringify(data[0]));
   for(const raw of data){
-    const keys=Object.keys(raw);
-    const key=(patterns)=>keys.find(k=>patterns.some(p=>k.toLowerCase().replace(/[^a-z0-9]/g,"").includes(p)));
-    const pick=(patterns)=>{const k=key(patterns);return k?raw[k]:null};
-    const amountValue=pick(["expenditure","amount","expense","totalexpenditures","totalexpense"]);
-    const amount=typeof amountValue==="number"?amountValue:Number(String(amountValue??"").replace(/[$,]/g,""));
+    const amount=Number(String(raw.opAudit??"").replace(/[$,]/g,""));
     if(!Number.isFinite(amount)) continue;
-
-    const government=String(pick(["county","municipality","government","jurisdiction","entity"])??"").trim();
-    const vendor=String(pick(["vendor","payee","recipient","provider"])??"").trim();
-    const department=String(pick(["department","function","agency","office","fund"])??sheet).trim();
-    const purpose=String(pick(["description","purpose","expendituretype","account","object","category"])??"").trim();
-    const fiscalYear=Number(pick(["fiscalyear","fiscalfy","fy"]))||2025;
-    const dateRaw=pick(["date"]);
-    const date=dateRaw instanceof Date?dateRaw.toISOString().slice(0,10):String(dateRaw??"").slice(0,10);
-
-    rows.push({
-      id:`TN-TAG-${rows.length+1}`,
-      governmentId:"tn",
-      governmentName:government||"Tennessee local government",
-      jurisdiction:government||"Tennessee",
-      date,
-      fiscalYear,
-      vendor:{name:vendor||"—",normalizedName:vendor?vendor.toUpperCase().replace(/[^A-Z0-9]+/g," ").trim():""},
-      department,
-      purpose:purpose||"Government expenditure",
-      category:purpose||department,
-      amount,
-      source:{
-        publisher:sourceMeta.publisher,
-        dataset:sourceMeta.dataset,
-        url:sourceMeta.url,
-        retrievedAt:sourceMeta.retrievedAt,
-        sourceRecordId:null,
-        sheet
-      }
-    });
+    const government=String(raw.ClientName??"").trim();
+    const department=String(raw["Minor Description"]??raw["Major Description"]??"Government").trim();
+    const major=String(raw["Major Description"]??"").trim();
+    const line=String(raw["Line Description"]??"").trim();
+    const object=String(raw.ObjectDescription??"").trim();
+    const purpose=[line,object].filter(Boolean).join(" • ")||"Government expenditure";
+    const fiscalYear=Number(raw.AuditYear)||2025;
+    const id=String(rows.length+1);
+    rows.push([id,government||"Tennessee local government",department,purpose,major,fiscalYear,amount]);
   }
 }
 
+const total=rows.reduce((sum,row)=>sum+row[6],0);
+const governments=[...new Set(rows.map(row=>row[1]))].sort();
+const departments=[...new Set(rows.map(row=>row[2]))].sort();
+
 await fs.mkdir(path.dirname(output),{recursive:true});
-await fs.writeFile(output,JSON.stringify({
-  schemaVersion:"1.1",
-  source:sourceMeta,
-  recordCount:rows.length,
-  records:rows
-},null,2));
+await fs.writeFile(output,JSON.stringify({schemaVersion:"2.0",source:sourceMeta,fields:["id","government","department","purpose","category","fiscalYear","amount"],recordCount:rows.length,total,governments,departments,records:rows}));
 console.log(`Imported ${rows.length} records from ${wb.SheetNames.length} sheets -> ${output}`);
