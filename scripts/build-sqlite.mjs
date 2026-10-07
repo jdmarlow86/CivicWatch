@@ -1,0 +1,22 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+import Database from "better-sqlite3";
+
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
+const input=process.argv[2]||path.join(ROOT,"data","normalized","tn-expenditures.json");
+const output=process.argv[3]||path.join(ROOT,"data","civicwatch.db");
+const schema=await fs.readFile(path.join(ROOT,"data","schema.sql"),"utf8");
+const payload=JSON.parse(await fs.readFile(input,"utf8"));
+const db=new Database(output);
+db.exec(schema);
+db.exec("DELETE FROM spending; DELETE FROM sources; DELETE FROM governments;");
+db.prepare("INSERT INTO governments(id,name,level,state) VALUES(?,?,?,?)").run("tn","State of Tennessee","state","TN");
+const source=db.prepare("INSERT INTO sources(publisher,dataset,url,retrieved_at,checksum) VALUES(?,?,?,?,?)");
+const src=source.run(payload.source.publisher,payload.source.dataset,payload.source.url,new Date().toISOString(),null).lastInsertRowid;
+const insert=db.prepare(`INSERT INTO spending(id,government_id,source_id,source_record_id,source_sheet,date,fiscal_year,vendor_name,vendor_normalized,department,purpose,category,amount_cents) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)`);
+const tx=db.transaction(records=>{for(const r of records)insert.run(r.id,r.governmentId,src,r.source?.sourceRecordId,r.source?.sheet,r.date,r.fiscalYear,r.vendor?.name,r.vendor?.normalizedName,r.department,r.purpose,r.category,Math.round(Number(r.amount)*100));});
+tx(payload.records||[]);
+db.exec("CREATE INDEX IF NOT EXISTS idx_spending_vendor_search ON spending(vendor_name);");
+db.close();
+console.log(`SQLite database built: ${output} (${payload.records?.length||0} records)`);
