@@ -10,7 +10,8 @@
     "data:download": "node scripts/download-tn-tag.mjs",
     "data:import": "node scripts/import-taggable.mjs",
     "data:db": "node scripts/build-sqlite.mjs",
-    "data:query": "node scripts/query-spending.mjs"
+    "data:query": "node scripts/query-spending.mjs",
+    "data:report": "node scripts/query-report.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
