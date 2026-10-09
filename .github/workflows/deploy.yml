@@ -46,8 +46,8 @@ jobs:
       - name: Verify Pages bundle paths
         run: |
           test -f dist/index.html
-          grep -Eo \"(src|href)=\\\"[^\\\"]+\\\"\" dist/index.html || true
-          grep -q \"assets/\" dist/index.html
+          grep -Eo '(src|href)="[^"]+"' dist/index.html || true
+          grep -q 'assets/' dist/index.html
           test -d dist/assets
           find dist/assets -maxdepth 1 -type f -print
 
