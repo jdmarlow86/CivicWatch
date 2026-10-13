@@ -40,12 +40,20 @@ jobs:
       - name: Publish normalized data to the Pages bundle
         run: mkdir -p public/data/normalized && cp data/normalized/tn-expenditures.json public/data/normalized/tn-expenditures.json
 
+      - name: Install PDF extraction dependency
+        run: python -m pip install --disable-pip-version-check pdfplumber
+
+      - name: Extract FY2025 county grant schedule candidates
+        run: python scripts/extract-county-grants.py
+
       - name: Build
         run: npm run build
 
       - name: Verify Pages bundle paths
         run: |
           test -f dist/index.html
+          test -f dist/funding.html
+          test -f dist/data/county-grants-fy2025.json
           grep -Eo '(src|href)="[^"]+"' dist/index.html || true
           grep -q 'assets/' dist/index.html
           test -d dist/assets
