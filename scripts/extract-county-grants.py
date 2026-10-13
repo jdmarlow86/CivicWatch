@@ -22,10 +22,12 @@ OUT = Path("public/data/county-grants-fy2025.json")
 def extract_total(text, kind):
     # Search around the exact total label and parse the first monetary value
     # on the same or immediately following lines. Avoid matching subtotals.
+    source = "FEDERAL" if kind == "federal" else "STATE"
     labels = [
-        rf"TOTAL\s+(?:FEDERAL|STATE)\s+GRANTS",
-        rf"TOTAL\s+(?:FEDERAL|STATE)\s+GRANT\s+EXPENDITURES",
-        rf"TOTAL\s+(?:FEDERAL|STATE)\s+AWARDS",
+        rf"TOTAL\s+{source}\s+GRANTS",
+        rf"TOTAL\s+{source}\s+GRANT\s+EXPENDITURES",
+        rf"TOTAL\s+{source}\s+AWARDS",
+        rf"TOTAL\s+{source}\s+ASSISTANCE",
     ]
     for label in labels:
         matches = list(re.finditer(label, text, flags=re.IGNORECASE))
