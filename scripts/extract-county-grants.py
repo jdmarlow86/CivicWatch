@@ -8,6 +8,7 @@ uncompiled, never silently treated as $0.
 import json
 import re
 import time
+from urllib.parse import quote
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -48,13 +49,13 @@ def main():
 
     results = {}
     for county in COUNTIES:
-        url = BASE.format(county=county)
+        url = BASE.format(county=quote(county, safe=""))
         record = {"county": county, "fiscalYear": 2025, "report": url,
                   "stateGrants": None, "federalGrants": None, "status": "not_extracted",
                   "note": "Report unavailable or schedule totals could not be identified automatically."}
         try:
             request = Request(url, headers={"User-Agent": "CivicWatch public-data extractor"})
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=12) as response:
                 pdf_bytes = response.read()
             import io
             with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
@@ -71,7 +72,7 @@ def main():
                 else:
                     record["status"] = "manual_review"
                     record["note"] = "Report downloaded, but one or both grant totals need manual review."
-        except (HTTPError, URLError, TimeoutError, OSError) as exc:
+        except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
             record["status"] = "report_unavailable"
             record["note"] = f"Official report URL could not be retrieved ({type(exc).__name__})."
         results[county] = record
