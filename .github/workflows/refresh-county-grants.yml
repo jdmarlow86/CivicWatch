@@ -28,7 +28,7 @@ jobs:
           cache: "pip"
 
       - name: Install PDF extraction dependency
-        run: python -m pip install --disable-pip-version-check pdfplumber
+        run: python -m pip install --disable-pip-version-check PyMuPDF
 
       - name: Extract FY2025 county grant schedule candidates
         run: python -u scripts/extract-county-grants.py
