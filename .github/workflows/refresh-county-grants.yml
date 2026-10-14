@@ -1,0 +1,46 @@
+name: Refresh FY2025 County Grant Candidates
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run monthly, independently of website deployments.
+    - cron: "43 7 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: county-grant-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install PDF extraction dependency
+        run: python -m pip install --disable-pip-version-check pdfplumber
+
+      - name: Extract FY2025 county grant schedule candidates
+        run: python -u scripts/extract-county-grants.py
+
+      - name: Commit refreshed candidate data when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/county-grants-fy2025.json
+          if git diff --cached --quiet; then
+            echo "County grant candidate data is unchanged."
+          else
+            git commit -m "Refresh FY2025 county grant candidates"
+            git push
+          fi
