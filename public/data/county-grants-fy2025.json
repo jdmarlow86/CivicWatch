@@ -1,0 +1,865 @@
+{
+  "source": "Tennessee Comptroller of the Treasury, county annual financial reports",
+  "fiscalYear": 2025,
+  "generatedAt": null,
+  "method": "Cached candidate dataset. Automated PDF extraction runs separately from website deployment; extracted values remain provisional until manually checked.",
+  "status": "awaiting_refresh",
+  "note": "No fresh extraction is performed during website deployment. Run the separate Refresh FY2025 county grant candidates workflow to refresh this file.",
+  "counties": {
+    "Anderson": {
+      "county": "Anderson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25AndersonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Bedford": {
+      "county": "Bedford",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BedfordAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Benton": {
+      "county": "Benton",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BentonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Bledsoe": {
+      "county": "Bledsoe",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BledsoeAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Blount": {
+      "county": "Blount",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BlountAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Bradley": {
+      "county": "Bradley",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BradleyAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Campbell": {
+      "county": "Campbell",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CampbellAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Cannon": {
+      "county": "Cannon",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CannonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Carroll": {
+      "county": "Carroll",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CarrollAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Carter": {
+      "county": "Carter",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CarterAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Cheatham": {
+      "county": "Cheatham",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CheathamAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Chester": {
+      "county": "Chester",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ChesterAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Claiborne": {
+      "county": "Claiborne",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ClaiborneAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Clay": {
+      "county": "Clay",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ClayAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Cocke": {
+      "county": "Cocke",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CockeAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Coffee": {
+      "county": "Coffee",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CoffeeAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Crockett": {
+      "county": "Crockett",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CrockettAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Cumberland": {
+      "county": "Cumberland",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CumberlandAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Davidson": {
+      "county": "Davidson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DavidsonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Decatur": {
+      "county": "Decatur",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DecaturAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "DeKalb": {
+      "county": "DeKalb",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DeKalbAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Dickson": {
+      "county": "Dickson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DicksonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Dyer": {
+      "county": "Dyer",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DyerAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Fayette": {
+      "county": "Fayette",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25FayetteAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Fentress": {
+      "county": "Fentress",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25FentressAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Franklin": {
+      "county": "Franklin",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25FranklinAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Gibson": {
+      "county": "Gibson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GibsonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Giles": {
+      "county": "Giles",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GilesAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Grainger": {
+      "county": "Grainger",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GraingerAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Greene": {
+      "county": "Greene",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GreeneAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Grundy": {
+      "county": "Grundy",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GrundyAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hamblen": {
+      "county": "Hamblen",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HamblenAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hamilton": {
+      "county": "Hamilton",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HamiltonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hancock": {
+      "county": "Hancock",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HancockAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hardeman": {
+      "county": "Hardeman",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HardemanAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hardin": {
+      "county": "Hardin",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HardinAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hawkins": {
+      "county": "Hawkins",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HawkinsAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Haywood": {
+      "county": "Haywood",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HaywoodAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Henderson": {
+      "county": "Henderson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HendersonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Henry": {
+      "county": "Henry",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HenryAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Hickman": {
+      "county": "Hickman",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HickmanAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Houston": {
+      "county": "Houston",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HoustonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Humphreys": {
+      "county": "Humphreys",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HumphreysAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Jackson": {
+      "county": "Jackson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25JacksonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Jefferson": {
+      "county": "Jefferson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25JeffersonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Johnson": {
+      "county": "Johnson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25JohnsonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Knox": {
+      "county": "Knox",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25KnoxAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Lake": {
+      "county": "Lake",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LakeAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Lauderdale": {
+      "county": "Lauderdale",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LauderdaleAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Lawrence": {
+      "county": "Lawrence",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LawrenceAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Lewis": {
+      "county": "Lewis",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LewisAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Lincoln": {
+      "county": "Lincoln",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LincolnAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Loudon": {
+      "county": "Loudon",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LoudonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Macon": {
+      "county": "Macon",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MaconAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Madison": {
+      "county": "Madison",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MadisonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Marion": {
+      "county": "Marion",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MarionAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Marshall": {
+      "county": "Marshall",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MarshallAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Maury": {
+      "county": "Maury",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MauryAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "McMinn": {
+      "county": "McMinn",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25McMinnAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "McNairy": {
+      "county": "McNairy",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25McNairyAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Meigs": {
+      "county": "Meigs",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MeigsAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Monroe": {
+      "county": "Monroe",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MonroeAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Montgomery": {
+      "county": "Montgomery",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MontgomeryAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Moore": {
+      "county": "Moore",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MooreAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Morgan": {
+      "county": "Morgan",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MorganAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Obion": {
+      "county": "Obion",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ObionAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Overton": {
+      "county": "Overton",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25OvertonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Perry": {
+      "county": "Perry",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PerryAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Pickett": {
+      "county": "Pickett",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PickettAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Polk": {
+      "county": "Polk",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PolkAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Putnam": {
+      "county": "Putnam",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PutnamAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Rhea": {
+      "county": "Rhea",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RheaAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Roane": {
+      "county": "Roane",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RoaneAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Robertson": {
+      "county": "Robertson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RobertsonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Rutherford": {
+      "county": "Rutherford",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RutherfordAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Scott": {
+      "county": "Scott",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ScottAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Sequatchie": {
+      "county": "Sequatchie",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SequatchieAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Sevier": {
+      "county": "Sevier",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SevierAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Shelby": {
+      "county": "Shelby",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ShelbyAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Smith": {
+      "county": "Smith",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SmithAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Stewart": {
+      "county": "Stewart",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25StewartAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Sullivan": {
+      "county": "Sullivan",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SullivanAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Sumner": {
+      "county": "Sumner",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SumnerAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Tipton": {
+      "county": "Tipton",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25TiptonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Trousdale": {
+      "county": "Trousdale",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25TrousdaleAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Unicoi": {
+      "county": "Unicoi",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25UnicoiAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Union": {
+      "county": "Union",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25UnionAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Van Buren": {
+      "county": "Van Buren",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25Van BurenAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Warren": {
+      "county": "Warren",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WarrenAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Washington": {
+      "county": "Washington",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WashingtonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Wayne": {
+      "county": "Wayne",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WayneAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Weakley": {
+      "county": "Weakley",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WeakleyAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "White": {
+      "county": "White",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WhiteAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Williamson": {
+      "county": "Williamson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WilliamsonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    },
+    "Wilson": {
+      "county": "Wilson",
+      "fiscalYear": 2025,
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WilsonAFR.pdf",
+      "stateGrants": null,
+      "federalGrants": null,
+      "status": "not_refreshed",
+      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+    }
+  }
+}
