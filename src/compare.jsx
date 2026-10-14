@@ -11,7 +11,7 @@ function countyName(government){const g=String(government||"").trim();return COU
 function App(){
  const [data,setData]=useState(null),[error,setError]=useState("");
  const [year,setYear]=useState("All years"),[category,setCategory]=useState("All categories"),[search,setSearch]=useState(""),[trendCounty,setTrendCounty]=useState("Campbell");
- useEffect(()=>{loadSpending().then(setData).catch(e=>setError(e.message))},[]);
+ useEffect(()=>{let active=true;loadSpending().then(value=>{if(active)setData(value)}).catch(e=>{console.error("CivicWatch county comparison data load failed:",e);if(active)setError("County data could not be loaded. Please refresh, or return to the Spending Explorer while we investigate the data source.")});return()=>{active=false}},[]);
  const records=data?.records||[];
  const years=useMemo(()=>[...new Set(records.map(r=>String(r[5]||"").trim()).filter(y=>/^\d{4}$/.test(y)))].sort(),[records]);
  const categories=useMemo(()=>[...new Set(records.map(r=>String(r[4]||"").trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b)),[records]);
