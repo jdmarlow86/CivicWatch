@@ -56,7 +56,7 @@ def process_county(county):
         with urlopen(request, timeout=12) as response:
             pdf_bytes = response.read()
         with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
-            text = "\\n".join(page.extract_text() or "" for page in pdf.pages)
+            text = "\n".join(page.extract_text() or "" for page in pdf.pages)
         if not text.strip():
             record["status"] = "manual_review"
             record["note"] = "PDF downloaded but no selectable text was found."
@@ -113,7 +113,7 @@ def main():
         "generatedAt": time.strftime("%Y-%m-%d"),
         "method": "Parallel PDF text extraction; extracted values are provisional until manually checked.",
         "counties": results
-    }, indent=2) + "\\n", encoding="utf-8")
+    }, indent=2) + "\n", encoding="utf-8")
     extracted = sum(1 for item in results.values() if item["status"] == "extracted_needs_review")
     print(f"Wrote {OUT}; {extracted}/{len(COUNTIES)} reports had both totals detected.")
 
