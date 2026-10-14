@@ -62,3 +62,32 @@
 .table .toolbar button:disabled{cursor:not-allowed;opacity:.45}
 @media(max-width:1100px){.explorer-filters{grid-template-columns:repeat(3,minmax(0,1fr))}.explorer-filters .search{grid-column:span 2}}
 @media(max-width:650px){.explorer-filters{grid-template-columns:1fr}.explorer-filters .search{grid-column:auto}.filter-summary{align-items:flex-start;flex-direction:column}.table .toolbar{flex-wrap:wrap}}
+
+
+/* Click-through spending record details */
+.details-toggle{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#1d4ed8;padding:7px 9px;font-size:11px;font-weight:750;white-space:nowrap}
+.details-toggle svg{width:14px;height:14px;transition:transform .15s ease}
+.details-toggle svg.rotated{transform:rotate(180deg)}
+tr.expanded-row td{background:#f8fbff;border-bottom-color:#dce7f7}
+.details-row>td{padding:0;background:#f8fbff}
+.record-details{padding:22px 24px 24px;border-bottom:1px solid #dce7f7}
+.detail-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}
+.detail-heading label{font-size:10px;letter-spacing:.1em;font-weight:800;color:var(--blue)}
+.detail-heading h3{font-size:18px;margin:5px 0}
+.detail-heading p{font-size:12px;color:var(--muted);margin:0}
+.detail-record-id{font-size:11px;font-weight:800;color:#334155;background:#e8eef8;border-radius:8px;padding:8px 10px;white-space:nowrap}
+.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.detail-grid>div{border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px;min-width:0}
+.detail-grid small,.detail-grid b{display:block}
+.detail-grid small{font-size:10px;color:var(--muted);margin-bottom:6px}
+.detail-grid b{font-size:12px;line-height:1.45;overflow-wrap:anywhere}
+.detail-provenance{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.detail-provenance>div{display:grid;grid-template-columns:18px minmax(0,1fr);gap:9px;align-items:start;border:1px solid var(--line);border-radius:9px;padding:13px;background:#fff}
+.detail-provenance>div>svg{width:17px;color:var(--blue)}
+.detail-provenance span b,.detail-provenance span small{display:block}
+.detail-provenance span b{font-size:12px;margin-bottom:4px}
+.detail-provenance span small{font-size:11px;color:var(--muted);line-height:1.5}
+.detail-provenance a{grid-column:2;display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;color:#1d4ed8;text-decoration:none;margin-top:3px}
+.detail-provenance a svg{width:13px;height:13px}
+.detail-note{font-size:11px;line-height:1.65;color:var(--muted);margin:15px 0 0;padding:12px 14px;border-left:3px solid #94a3b8;background:#fff;border-radius:0 8px 8px 0}
+@media(max-width:650px){.details-toggle{padding:7px;font-size:10px}.record-details{padding:16px 12px}.detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-provenance{grid-template-columns:1fr}.detail-heading h3{font-size:16px}}
