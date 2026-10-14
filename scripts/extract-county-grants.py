@@ -8,6 +8,8 @@ uncompiled, never silently treated as $0.
 import json
 import re
 import time
+import io
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import quote
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -43,52 +45,75 @@ def extract_total(text, kind):
                     pass
     return None
 
-def main():
+def process_county(county):
+    """Download and extract one county report. Safe to run concurrently."""
+    url = BASE.format(county=quote(county, safe=""))
+    record = {"county": county, "fiscalYear": 2025, "report": url,
+              "stateGrants": None, "federalGrants": None, "status": "not_extracted",
+              "note": "Report unavailable or schedule totals could not be identified automatically."}
     try:
-        import pdfplumber
+        request = Request(url, headers={"User-Agent": "CivicWatch public-data extractor"})
+        with urlopen(request, timeout=12) as response:
+            pdf_bytes = response.read()
+        with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+            text = "\\n".join(page.extract_text() or "" for page in pdf.pages)
+        if not text.strip():
+            record["status"] = "manual_review"
+            record["note"] = "PDF downloaded but no selectable text was found."
+        else:
+            record["stateGrants"] = extract_total(text, "state")
+            record["federalGrants"] = extract_total(text, "federal")
+            if record["stateGrants"] is not None and record["federalGrants"] is not None:
+                record["status"] = "extracted_needs_review"
+                record["note"] = "Automated extraction; verify totals and schedule scope against the linked report before treating as confirmed."
+            else:
+                record["status"] = "manual_review"
+                record["note"] = "Report downloaded, but one or both grant totals need manual review."
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
+        record["status"] = "report_unavailable"
+        record["note"] = f"Official report URL could not be retrieved ({type(exc).__name__})."
+    return record
+
+
+def main():
+    global pdfplumber
+    try:
+        import pdfplumber as _pdfplumber
+        pdfplumber = _pdfplumber
     except ImportError as exc:
         raise SystemExit("Install pdfplumber before running this extractor") from exc
 
+    # County reports are independent. Bounded concurrency overlaps slow HTTP
+    # requests without overwhelming the Comptroller's public website.
     results = {}
-    for county in COUNTIES:
-        url = BASE.format(county=quote(county, safe=""))
-        record = {"county": county, "fiscalYear": 2025, "report": url,
-                  "stateGrants": None, "federalGrants": None, "status": "not_extracted",
-                  "note": "Report unavailable or schedule totals could not be identified automatically."}
-        try:
-            request = Request(url, headers={"User-Agent": "CivicWatch public-data extractor"})
-            with urlopen(request, timeout=12) as response:
-                pdf_bytes = response.read()
-            import io
-            with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
-                text = "\n".join(page.extract_text() or "" for page in pdf.pages)
-            if not text.strip():
-                record["status"] = "manual_review"
-                record["note"] = "PDF downloaded but no selectable text was found."
-            else:
-                record["stateGrants"] = extract_total(text, "state")
-                record["federalGrants"] = extract_total(text, "federal")
-                if record["stateGrants"] is not None and record["federalGrants"] is not None:
-                    record["status"] = "extracted_needs_review"
-                    record["note"] = "Automated extraction; verify totals and schedule scope against the linked report before treating as confirmed."
-                else:
-                    record["status"] = "manual_review"
-                    record["note"] = "Report downloaded, but one or both grant totals need manual review."
-        except (HTTPError, URLError, TimeoutError, OSError, ValueError) as exc:
-            record["status"] = "report_unavailable"
-            record["note"] = f"Official report URL could not be retrieved ({type(exc).__name__})."
-        results[county] = record
-        print(f"{county}: {record['status']}")
-        time.sleep(0.1)
+    max_workers = 8
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(process_county, county): county for county in COUNTIES}
+        completed = 0
+        for future in as_completed(futures):
+            county = futures[future]
+            try:
+                record = future.result()
+            except Exception as exc:
+                # One unexpected PDF/parser issue must not abort all 95 counties.
+                url = BASE.format(county=quote(county, safe=""))
+                record = {"county": county, "fiscalYear": 2025, "report": url,
+                          "stateGrants": None, "federalGrants": None, "status": "manual_review",
+                          "note": f"Unexpected extraction error ({type(exc).__name__}); manual review required."}
+            results[county] = record
+            completed += 1
+            print(f"[{completed}/{len(COUNTIES)}] {county}: {record['status']}", flush=True)
 
+    # Keep output order stable regardless of the order workers finish.
+    results = {county: results[county] for county in COUNTIES}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         "source": "Tennessee Comptroller of the Treasury, county annual financial reports",
         "fiscalYear": 2025,
         "generatedAt": time.strftime("%Y-%m-%d"),
-        "method": "PDF text extraction; extracted values are provisional until manually checked.",
+        "method": "Parallel PDF text extraction; extracted values are provisional until manually checked.",
         "counties": results
-    }, indent=2) + "\n", encoding="utf-8")
+    }, indent=2) + "\\n", encoding="utf-8")
     extracted = sum(1 for item in results.values() if item["status"] == "extracted_needs_review")
     print(f"Wrote {OUT}; {extracted}/{len(COUNTIES)} reports had both totals detected.")
 
