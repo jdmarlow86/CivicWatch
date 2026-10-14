@@ -50,6 +50,9 @@ jobs:
         run: |
           test -f dist/index.html
           test -f dist/funding.html
+          test -f dist/county-comparison.html
+          grep -q 'assets/' dist/county-comparison.html
+          test -f dist/data/normalized/tn-expenditures.json
           test -f dist/data/county-grants-fy2025.json
           grep -Eo '(src|href)="[^"]+"' dist/index.html || true
           grep -q 'assets/' dist/index.html
