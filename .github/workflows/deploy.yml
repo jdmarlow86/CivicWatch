@@ -1,4 +1,4 @@
-name: Deploy CivicWatch to GitHub Pages
+name: Deploy CivicWatch to GitHub Pages (Vite build)
 
 on:
   push:
