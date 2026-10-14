@@ -91,3 +91,7 @@ tr.expanded-row td{background:#f8fbff;border-bottom-color:#dce7f7}
 .detail-provenance a svg{width:13px;height:13px}
 .detail-note{font-size:11px;line-height:1.65;color:var(--muted);margin:15px 0 0;padding:12px 14px;border-left:3px solid #94a3b8;background:#fff;border-radius:0 8px 8px 0}
 @media(max-width:650px){.details-toggle{padding:7px;font-size:10px}.record-details{padding:16px 12px}.detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-provenance{grid-template-columns:1fr}.detail-heading h3{font-size:16px}}
+
+/* Plain-language explanation inside the spending record purpose card */
+.purpose-detail .category-explanation{margin:9px 0 0;padding-top:9px;border-top:1px solid #e5eaf1;color:#536174;font-size:11px;font-weight:400;line-height:1.55}
+.purpose-detail .category-explanation strong{color:#334155;font-weight:750}
