@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "civicwatch-pages"
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
