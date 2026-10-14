@@ -1,10 +1,8 @@
 {
   "source": "Tennessee Comptroller of the Treasury, county annual financial reports",
   "fiscalYear": 2025,
-  "generatedAt": null,
-  "method": "Cached candidate dataset. Automated PDF extraction runs separately from website deployment; extracted values remain provisional until manually checked.",
-  "status": "awaiting_refresh",
-  "note": "No fresh extraction is performed during website deployment. Run the separate Refresh FY2025 county grant candidates workflow to refresh this file.",
+  "generatedAt": "2026-10-14",
+  "method": "Parallel downloads with targeted extraction from the official grant schedule; values remain provisional until manually checked.",
   "counties": {
     "Anderson": {
       "county": "Anderson",
@@ -12,8 +10,8 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25AndersonAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Bedford": {
       "county": "Bedford",
@@ -21,35 +19,35 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BedfordAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Benton": {
       "county": "Benton",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BentonAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2153255,
+      "federalGrants": 6496639,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Bledsoe": {
       "county": "Bledsoe",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BledsoeAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2521010,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Blount": {
       "county": "Blount",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BlountAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 6694812,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Bradley": {
       "county": "Bradley",
@@ -57,8 +55,8 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25BradleyAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Campbell": {
       "county": "Campbell",
@@ -66,107 +64,107 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CampbellAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Cannon": {
       "county": "Cannon",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CannonAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1464678,
+      "federalGrants": 4165230,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Carroll": {
       "county": "Carroll",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CarrollAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2525011,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Carter": {
       "county": "Carter",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CarterAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 6622177,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Cheatham": {
       "county": "Cheatham",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CheathamAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 3310608,
+      "federalGrants": 6372269,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Chester": {
       "county": "Chester",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ChesterAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1649303,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Claiborne": {
       "county": "Claiborne",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ClaiborneAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 4518629,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Clay": {
       "county": "Clay",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ClayAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1956423,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Cocke": {
       "county": "Cocke",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CockeAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 5734452,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Coffee": {
       "county": "Coffee",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CoffeeAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 3338422,
+      "federalGrants": 7182556,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Crockett": {
       "county": "Crockett",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CrockettAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1878190,
+      "federalGrants": 3334192,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Cumberland": {
       "county": "Cumberland",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25CumberlandAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2241950,
+      "federalGrants": 22075311,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Davidson": {
       "county": "Davidson",
@@ -174,17 +172,17 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DavidsonAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Decatur": {
       "county": "Decatur",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DecaturAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2799428,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "DeKalb": {
       "county": "DeKalb",
@@ -192,17 +190,17 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DeKalbAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Dickson": {
       "county": "Dickson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DicksonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 4507160,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Dyer": {
       "county": "Dyer",
@@ -210,44 +208,44 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25DyerAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Fayette": {
       "county": "Fayette",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25FayetteAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 3436584,
+      "federalGrants": 6917211,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Fentress": {
       "county": "Fentress",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25FentressAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2741491,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Franklin": {
       "county": "Franklin",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25FranklinAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 4079339,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Gibson": {
       "county": "Gibson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GibsonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1578274,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Giles": {
       "county": "Giles",
@@ -255,44 +253,44 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GilesAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Grainger": {
       "county": "Grainger",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GraingerAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1956252,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Greene": {
       "county": "Greene",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GreeneAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 7551180,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Grundy": {
       "county": "Grundy",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25GrundyAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2306847,
+      "federalGrants": 6597431,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Hamblen": {
       "county": "Hamblen",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HamblenAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 5051354,
+      "federalGrants": 21297909,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Hamilton": {
       "county": "Hamilton",
@@ -300,26 +298,26 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HamiltonAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Hancock": {
       "county": "Hancock",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HancockAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1290412,
+      "federalGrants": 4469590,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Hardeman": {
       "county": "Hardeman",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HardemanAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 3125736,
+      "federalGrants": 7140035,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Hardin": {
       "county": "Hardin",
@@ -327,80 +325,80 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HardinAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Hawkins": {
       "county": "Hawkins",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HawkinsAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 5864640,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Haywood": {
       "county": "Haywood",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HaywoodAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 9404562,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Henderson": {
       "county": "Henderson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HendersonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 5779237,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Henry": {
       "county": "Henry",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HenryAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1782855,
+      "federalGrants": 8009045,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Hickman": {
       "county": "Hickman",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HickmanAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1954715,
+      "federalGrants": 7135883,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Houston": {
       "county": "Houston",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HoustonAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1820267,
+      "federalGrants": 2768682,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Humphreys": {
       "county": "Humphreys",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25HumphreysAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2901263,
+      "federalGrants": 9894112,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Jackson": {
       "county": "Jackson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25JacksonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2122610,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Jefferson": {
       "county": "Jefferson",
@@ -408,17 +406,17 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25JeffersonAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Johnson": {
       "county": "Johnson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25JohnsonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 4065610,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Knox": {
       "county": "Knox",
@@ -426,17 +424,17 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25KnoxAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Lake": {
       "county": "Lake",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LakeAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 659490,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Lauderdale": {
       "county": "Lauderdale",
@@ -444,8 +442,8 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LauderdaleAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Lawrence": {
       "county": "Lawrence",
@@ -453,71 +451,71 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LawrenceAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Lewis": {
       "county": "Lewis",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LewisAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1544581,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Lincoln": {
       "county": "Lincoln",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LincolnAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 3088959,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Loudon": {
       "county": "Loudon",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25LoudonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 3421212,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Macon": {
       "county": "Macon",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MaconAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2415470,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Madison": {
       "county": "Madison",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MadisonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 13738744,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Marion": {
       "county": "Marion",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MarionAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2980235,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Marshall": {
       "county": "Marshall",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MarshallAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2780521,
+      "federalGrants": 6721642,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Maury": {
       "county": "Maury",
@@ -525,80 +523,80 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MauryAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "McMinn": {
       "county": "McMinn",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25McMinnAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 4049749,
+      "federalGrants": 9884373,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "McNairy": {
       "county": "McNairy",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25McNairyAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 4485321,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Meigs": {
       "county": "Meigs",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MeigsAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1598835,
+      "federalGrants": 3172073,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Monroe": {
       "county": "Monroe",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MonroeAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 4103146,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Montgomery": {
       "county": "Montgomery",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MontgomeryAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 20393115,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Moore": {
       "county": "Moore",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MooreAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 961456,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Morgan": {
       "county": "Morgan",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25MorganAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2333988,
+      "federalGrants": 9078025,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Obion": {
       "county": "Obion",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ObionAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2056010,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Overton": {
       "county": "Overton",
@@ -606,44 +604,44 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25OvertonAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Perry": {
       "county": "Perry",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PerryAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1457664,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Pickett": {
       "county": "Pickett",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PickettAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 989266,
+      "federalGrants": 1755453,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Polk": {
       "county": "Polk",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PolkAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2567538,
+      "federalGrants": 5378015,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Putnam": {
       "county": "Putnam",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25PutnamAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 9749464,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Rhea": {
       "county": "Rhea",
@@ -651,26 +649,26 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RheaAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Roane": {
       "county": "Roane",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RoaneAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 5482142,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Robertson": {
       "county": "Robertson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RobertsonAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 8285237,
+      "federalGrants": 15047367,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Rutherford": {
       "county": "Rutherford",
@@ -678,26 +676,26 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25RutherfordAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Scott": {
       "county": "Scott",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ScottAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 3124158,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Sequatchie": {
       "county": "Sequatchie",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SequatchieAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 1210789,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Sevier": {
       "county": "Sevier",
@@ -705,8 +703,8 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SevierAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Shelby": {
       "county": "Shelby",
@@ -714,26 +712,26 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25ShelbyAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Smith": {
       "county": "Smith",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SmithAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 2124769,
+      "federalGrants": 8415652,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Stewart": {
       "county": "Stewart",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25StewartAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1656606,
+      "federalGrants": 5766000,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Sullivan": {
       "county": "Sullivan",
@@ -741,35 +739,35 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SullivanAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Sumner": {
       "county": "Sumner",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25SumnerAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 15445271,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Tipton": {
       "county": "Tipton",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25TiptonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 5631479,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Trousdale": {
       "county": "Trousdale",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25TrousdaleAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 1392301,
+      "federalGrants": 8017460,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "Unicoi": {
       "county": "Unicoi",
@@ -777,26 +775,26 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25UnicoiAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Union": {
       "county": "Union",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25UnionAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2536326,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Van Buren": {
       "county": "Van Buren",
       "fiscalYear": 2025,
-      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25Van BurenAFR.pdf",
+      "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25Van%20BurenAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Warren": {
       "county": "Warren",
@@ -804,8 +802,8 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WarrenAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Washington": {
       "county": "Washington",
@@ -813,53 +811,53 @@
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WashingtonAFR.pdf",
       "stateGrants": null,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "report_unavailable",
+      "note": "Official report URL could not be retrieved (HTTPError)."
     },
     "Wayne": {
       "county": "Wayne",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WayneAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 2969230,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Weakley": {
       "county": "Weakley",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WeakleyAFR.pdf",
-      "stateGrants": null,
-      "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "stateGrants": 3849118,
+      "federalGrants": 7720116,
+      "status": "extracted_needs_review",
+      "note": "Totals extracted from the Schedule of Expenditures of Federal Awards and State Grants. Verify against the linked report before treating as confirmed."
     },
     "White": {
       "county": "White",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WhiteAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 3457368,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Williamson": {
       "county": "Williamson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WilliamsonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 16343343,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     },
     "Wilson": {
       "county": "Wilson",
       "fiscalYear": 2025,
       "report": "https://comptroller.tn.gov/content/dam/cot/la/documents/county/2025/FY25WilsonAFR.pdf",
-      "stateGrants": null,
+      "stateGrants": 11485333,
       "federalGrants": null,
-      "status": "not_refreshed",
-      "note": "Candidate totals have not been refreshed in the separate extraction workflow."
+      "status": "manual_review",
+      "note": "The grant schedule was found, but one or both exact total rows need manual review."
     }
   }
 }
