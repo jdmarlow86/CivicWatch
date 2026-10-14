@@ -1,6 +1,6 @@
 import React,{useEffect,useMemo,useState} from "react";
 import {createRoot} from "react-dom/client";
-import {ArrowLeft,ArrowUpRight,CalendarDays,ChartNoAxesColumnIncreasing,Database,ExternalLink,Info,Landmark,Search,TrendingUp} from "lucide-react";
+import {ArrowLeft,ArrowUpRight,CalendarDays,BarChart3,Database,ExternalLink,Info,Landmark,Search,TrendingUp} from "lucide-react";
 import {loadSpending} from "./data/loadSpending.js";
 import "./styles.css";
 
