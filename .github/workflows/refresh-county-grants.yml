@@ -1,6 +1,10 @@
 name: Refresh FY2025 County Grant Candidates
 
 on:
+  push:
+    paths:
+      - 'scripts/extract-county-grants.py'
+      - '.github/workflows/refresh-county-grants.yml'
   workflow_dispatch:
   schedule:
     # Run monthly, independently of website deployments.
