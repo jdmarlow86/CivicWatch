@@ -11,6 +11,7 @@ export default defineConfig({
         main: "index.html",
         funding: "funding.html",
         countyComparison: "county-comparison.html",
+        dataGuide: "how-to-read-data.html",
       },
     },
   },
